@@ -1,5 +1,6 @@
 import { getBlogPosts } from './data'
 import './style.css'
+import './test.scss'
 import HeroImage from './asserts/images/hero.jpg'
 import './test/date/printDate'
 

@@ -55,6 +55,12 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
+        // 匹配所有以scss结尾的文件
+        test: /\.scss$/i,
+        // 从右往左解析
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
         test: /\.(jpg|png|jpeg|gif|svg)$/i,
         // 配置图片资源
         type: 'asset/resource',
